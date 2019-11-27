@@ -1,0 +1,61 @@
+/* Global Styles */
+:root {
+  --sans-serif: 'Roboto';
+  --serif: 'Baskervville';
+  --main-color: hsl(200,100%, 35%);
+}
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+/* Typography */
+body {
+  font-family: var(--sans-serif, sans-serif);
+  background: hsl(200, 100%, 98%);
+  color: var(--main-color);
+}
+/* Structure */
+.container {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  background: hsl(200,100%, 95%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 3em;
+  align-items: stretch;
+}
+
+
+/* Component Style */
+.flex-item {
+  border: 1px solid hsl(200,100%, 35%);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.button-container {
+  display:flex;
+  justify-content: center;
+  width: 33%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.fb-style-btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+.fb-style-dark {
+  box-shadow: inset 0 1px #4d73bf;
+  background: #4267b2;
+  border: 1px solid #4267b2;
+  color: white;
+  text-shadow: 0 1px #3559a5;
+}
+  .fb-style-dark:hover {
+   background: #2b54a7; 
+  }
