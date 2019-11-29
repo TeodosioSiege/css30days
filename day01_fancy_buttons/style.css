@@ -66,4 +66,21 @@ button {
   .fb-style-dark:hover {
    background: #2b54a7; 
   }
+  
 
+  .fb-style-dark:active {
+    background: #1d4698;
+    border-color: #1d4698; 
+   }
+.fb-style-light {
+  background: #f6f7f9;
+  border: 1px solid #ced0d4;
+  color: #4b4f56;
+}
+  .fb-style-light:hover {
+    background: #e9ebee;
+  }
+  .fb-style-light:active {
+    background: #d8dade;
+    border-color: #d8dade;
+  }
