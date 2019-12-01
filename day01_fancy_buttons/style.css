@@ -49,7 +49,7 @@ button {
 .button-container {
   display:flex;
   align-items: center;
-  width: 33%;
+  width: 66%;
   margin: 0 auto;
   justify-content: space-evenly;
 }
@@ -185,3 +185,91 @@ button {
                 0 6px hsl(54, 100%, 12%),
                 0 7px hsl(54, 100%, 10%);
     }
+  /* Gradient Buttons */
+
+  .gradient-btn-1 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background: #e7eef1;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to top right,rgb(0, 238, 255),rgb(0, 162, 255));
+    border-image-slice: 1;
+    color: rgb(0, 238, 255);
+    transition: all 0.3s;
+  }
+    .gradient-btn-1:hover {
+      background-image: linear-gradient(to top right,rgb(0, 238, 255),rgb(0, 162, 255));
+      color: white;
+    }
+
+  .gradient-btn-2 {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.4rem;
+    background: #e7eef1;
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right,rgb(0, 238, 255),transparent);
+    border-image-slice: 1;
+    color: rgb(0, 238, 255);
+    transition: all 0.3s;
+  }
+  .gradient-btn-2:hover {
+    background-image: linear-gradient(to right,rgb(0, 238, 255),transparent);
+    color: white;
+    border-right-style: none;
+  }
+
+  /* Animated Buttons */
+  .animated-btn-1 {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: #00b3b4;
+    background-image: url('./pattern.png');
+    background-size: 40px 40px; 
+    border: 1px solid #555;
+    color: white;
+    transition: all ease 0.3s;
+  }
+    .animated-btn-1:hover {
+      animation: loading-button-animation 2s linear infinite;
+    }
+    @keyframes loading-button-animation {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 40px 0;
+      }
+    }
+.animated-btn-2  {
+  position: relative;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #00b3b4;
+  background-size: 40px 40px; 
+  border: 1px solid #555;
+  color: white;
+  transition: all ease 0.3s;
+}
+.animated-btn-2::after {
+  position: absolute;
+  top: 34%;
+  right: 0.6em;
+  content: "»";
+  opacity: 0;
+  transition: all ease 0.3s;
+}
+.animated-btn-2:hover {
+  padding: 20px 60px 20px 20px;
+}
+
+.animated-btn-2:hover::after {
+  right: 1.2em;
+  opacity: 1;
+}
