@@ -37,7 +37,7 @@ h2 {
 .flex-item {
   /* border: 1px solid hsl(200,100%, 35%); */
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
 }
 
 button {
@@ -273,3 +273,49 @@ button {
   right: 1.2em;
   opacity: 1;
 }
+
+/* Toggle Switch UI Buttons */
+
+.toggle-1 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+  .toggle-1_input {
+    display: none;
+  }
+  .toggle-1_button {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: #f2395a;
+    border: 1px solid #f2395a;
+    color: white;
+    width: 80px;
+    height: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .toggle-1_button::before {
+    position: absolute;
+    top: 4px;
+    left: 37px;
+    content: "off";
+    display: inline-block;
+    height: 20px;
+    padding: 0 3px;
+    background: white;
+    color: #f2395a;
+    transition: all 0.3s ease;    
+  }
+  .toggle-1_input:checked + .toggle-1_button {
+    background: #00b3b4;
+    border: 1px solid #00b3b4;
+  }
+  .toggle-1_input:checked + .toggle-1_button::before {
+    left: 5px;
+    color: #00b3b4;
+    content: "on";
+  }
