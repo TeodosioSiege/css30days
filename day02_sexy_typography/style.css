@@ -17,13 +17,28 @@ body {
   color: var(--main-color);
 }
 h2 {
-  font-size: 5rem;
+  font-family: 'Lobster', cursive;
 }
 
 
-/* .shadow-typo {
+.shadow-typo {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: #00b3b4;
+  text-shadow: 3px 3px #e7eef1, 8px 8px rgba(0,0,0,0.1);
+}
 
-} */
+.threedee-typo {
+  text-transform: uppercase;
+  font-size: 6rem;
+  color: #f2395a;
+  transform: skew(-5deg,-5deg) rotate(5deg);
+  transform-origin: center center;
+}
+
+
 /* Structure */
 .container {
   min-height: 100vh;
