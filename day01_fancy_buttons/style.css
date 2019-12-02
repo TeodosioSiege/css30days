@@ -319,3 +319,45 @@ button {
     color: #00b3b4;
     content: "on";
   }
+
+.toggle-2 {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px 0 0;
+}
+  .toggle-2_input {
+    display: none;
+  }
+  .toggle-2_button {
+    position: relative;
+    display: inline-block;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #aaa;
+    padding: 5px 10px 5px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .toggle-2_button::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .toggle-2_input:checked + .toggle-2_button {
+    background: #00b3b4;
+    border-color: #00b3b4;
+    color: white;
+  }
+  .toggle-2_input:checked + .toggle-2_button::before {
+    background: white;
+  }
