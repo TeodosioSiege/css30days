@@ -17,6 +17,10 @@ body {
   color: var(--main-color);
 }
 
+h4 {
+  margin-bottom: 1em;
+}
+
 /* Structure */
 .container {
   min-height: 100vh;
@@ -29,4 +33,10 @@ body {
   padding-top: 3em;
   align-items: stretch;
   justify-content: center;
+}
+
+
+/* Components */
+.clip-image-1 {
+  clip-path: circle(40% at 50% 50%);
 }
