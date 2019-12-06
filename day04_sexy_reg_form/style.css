@@ -145,5 +145,18 @@ p {
   background: white;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
-  transform: scale();
+  transform: scale(0.90) translate(0,0);
+  transition: all 0.3s ease;
+}
+
+.register-block::after {
+  transition-delay: 0.05s;
+}
+.register-block:hover::before {
+  transform: scale(0.96) translate(0,16px);
+  z-index: -1;
+}
+.register-block:hover::after {
+  transform: scale(0.92) translate(0,32px);
+  z-index: -2;
 }
