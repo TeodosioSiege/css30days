@@ -9,3 +9,6 @@
 .sandbox img:hover {
     cursor: crosshair;
 }
+.grayscale:hover {
+    filter: grayscale(1);
+}
