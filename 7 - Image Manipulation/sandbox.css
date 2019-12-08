@@ -3,3 +3,9 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+.sandbox img {
+    transition: all 0.3s ease;
+}
+.sandbox img:hover {
+    cursor: crosshair;
+}
