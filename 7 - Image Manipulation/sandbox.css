@@ -10,5 +10,25 @@
     cursor: crosshair;
 }
 .grayscale:hover {
+    filter: grayscale(0);
+}
+
+.grayscale {
     filter: grayscale(1);
+}
+
+.blur {
+    filter: blur(2px);
+}
+
+.blur:hover {
+    filter: blur(0);
+}
+
+.invert {
+    filter: invert(1);
+}
+    
+.invert:hover {
+    filter: invert(0);
 }
