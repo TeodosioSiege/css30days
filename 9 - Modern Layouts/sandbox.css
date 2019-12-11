@@ -54,3 +54,39 @@
 .layout2 footer {
     clear: both;
 }
+
+/* LAYOUT NUMBER 3 */
+
+.layout3 header .logo {
+    width: 20%;
+    margin: 0;
+    float: right;
+}
+
+.layout3 header nav {
+    width: 78%;
+    float:left;
+    margin: 0;
+}
+
+.layout3 header::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.layout3 article {
+    width: 32%;
+    float: left;
+    margin: 0 2% 0 0;
+}
+
+.layout3 article:last-child {
+    margin: 0;
+}
+
+.layout3 .articles::after {
+    display: table;
+    content: "";
+    clear: both;   
+}
