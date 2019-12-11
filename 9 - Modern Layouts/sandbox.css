@@ -90,3 +90,22 @@
     content: "";
     clear: both;   
 }
+
+/* Responsive layout */
+
+@media only screen and (max-width: 768px) {
+    .layout1 article,
+    .layout1 aside,
+    .layout2 header .logo,
+    .layout2 header nav,
+    .layout2 aside.sidenav,
+    .layout2 aside.sidebar,
+    .layout2 article,
+    .layout3 article,
+    .layout3 header .logo,
+    .layout3 header nav  {
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+}
